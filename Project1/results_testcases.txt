@@ -1,0 +1,1769 @@
+                                   CS3375 Programming Project Test Cases and Results
+								   
+Part 1:
+
+1) Modification is made in source code file, calculated total memory access as number of total hit + total misses ,and then calculated rate accordingly.
+
+2)After compiling and running simulator and each given traces results are as follows:
+
+For trace: trace.hpcg
+Result:
+cpu-24-19:/CS5375$ ./cachesim direct trace_for_students/trace.hpcg
+
+==================================
+Cache type:    Direct-Mapped Cache
+==================================
+Cache Hits:    1301327
+Cache Misses:  198673
+Total Memory Request: 1500000
+Hit Rate : 0.13
+Miss Rate : 0.87
+
+----------------------------------
+
+For trace: trace.stream_20
+Result: 
+cpu-24-19:/CS5375$ ./cachesim direct trace_for_students/trace.stream_20
+
+==================================
+Cache type:    Direct-Mapped Cache
+==================================
+Cache Hits:    4
+Cache Misses:  16
+Total Memory Request: 20
+Hit Rate : 0.80
+Miss Rate : 0.20
+--------------------------------------
+
+For trace: trace.stream_10
+Result:
+cpu-24-19:/CS5375$ ./cachesim direct trace_for_students/trace.stream_10
+
+==================================
+Cache type:    Direct-Mapped Cache
+==================================
+Cache Hits:    0
+Cache Misses:  10
+Total Memory Request: 10
+Hit Rate : 1.00
+Miss Rate : 0.00
+
+----------------------------------------------
+
+For trace: trace.stream
+Result:
+cpu-24-19:/CS5375$ ./cachesim direct trace_for_students/trace.stream
+
+==================================
+Cache type:    Direct-Mapped Cache
+==================================
+Cache Hits:    1059918
+Cache Misses:  2174137
+Total Memory Request: 3234055
+Hit Rate : 0.67
+Miss Rate : 0.33
+
+---------------------------------------------------
+For trace: hw2_q4_memoryaddr
+Result:
+cpu-24-19:/CS5375$ ./cachesim direct trace_for_students/hw2_q4_memoryaddr
+
+==================================
+Cache type:    Direct-Mapped Cache
+==================================
+Cache Hits:    7
+Cache Misses:  5
+Total Memory Request: 12
+Hit Rate : 0.42
+Miss Rate : 0.58
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+###########################################################################################################################################################
+                                                 Part 2:
+									
+   
+                           1) For requirement 1: Cache Size = 32 KB i.e 32768
+
+***************************************Test Case1: Fully Associative and cache line size = 16 bytes**********************************************
+Results:
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.hpcg
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1368766
+Cache Misses:     131234
+Total Memory Request: 1500000
+Cache Miss Rate:  0.09
+Cache Hit Rate:   0.91
+
+-------------------------------------------
+
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_20
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       18
+Cache Misses:     2
+Total Memory Request: 20
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+
+------------------------------------------------
+
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_10
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       8
+Cache Misses:     2
+Total Memory Request: 10
+Cache Miss Rate:  0.20
+Cache Hit Rate:   0.80
+-------------------------------------------------------
+
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1848233
+Cache Misses:     1385822
+Total Memory Request: 3234055
+Cache Miss Rate:  0.43
+Cache Hit Rate:   0.57
+
+---------------------------------------------------
+
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/hw2_q4_memoryaddr
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     1
+Total Memory Request: 12
+Cache Miss Rate:  0.08
+Cache Hit Rate:   0.92
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+**********************************************Test Case2: Fully Associative and cache line size = 32 bytes************************************************
+
+
+Results:
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.hpcg
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1286603
+Cache Misses:     213397
+Total Memory Request: 1500000
+Cache Miss Rate:  0.14
+Cache Hit Rate:   0.86
+
+-------------------------------------------------------------
+
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_20
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       18
+Cache Misses:     2
+Total Memory Request: 20
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+
+---------------------------------------------------------
+
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_10
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       8
+Cache Misses:     2
+Total Memory Request: 10
+Cache Miss Rate:  0.20
+Cache Hit Rate:   0.80
+-----------------------------------------------
+
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1506020
+Cache Misses:     1728035
+Total Memory Request: 3234055
+Cache Miss Rate:  0.53
+Cache Hit Rate:   0.47
+----------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/hw2_q4_memoryaddr
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     1
+Total Memory Request: 12
+Cache Miss Rate:  0.08
+Cache Hit Rate:   0.92
+
+---------------------------------------------------------------------------------------------------------------
+***********************************************Test Case3: Fully Associative and cache line size = 128 bytes*****************************************************
+Results:
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.hpcg
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1214917
+Cache Misses:     285083
+Total Memory Request: 1500000
+Cache Miss Rate:  0.19
+Cache Hit Rate:   0.81
+-------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_20
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       18
+Cache Misses:     2
+Total Memory Request: 20
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+----------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_10
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       8
+Cache Misses:     2
+Total Memory Request: 10
+Cache Miss Rate:  0.20
+Cache Hit Rate:   0.80
+-----------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1249243
+Cache Misses:     1984812
+Total Memory Request: 3234055
+Cache Miss Rate:  0.61
+Cache Hit Rate:   0.39
+----------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/hw2_q4_memoryaddr
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     1
+Total Memory Request: 12
+Cache Miss Rate:  0.08
+Cache Hit Rate:   0.92
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+********************************************Test Case4: 8 Way and cache line size = 16 bytes***************************************************
+
+Results:
+
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1353943
+Cache Misses:     146057
+Total Memory Request: 1500000
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+-----------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       12
+Cache Misses:     8
+Total Memory Request: 20
+Cache Miss Rate:  0.40
+Cache Hit Rate:   0.60
+---------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     3
+Total Memory Request: 10
+Cache Miss Rate:  0.30
+Cache Hit Rate:   0.70
+-----------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1166803
+Cache Misses:     2067252
+Total Memory Request: 3234055
+Cache Miss Rate:  0.64
+Cache Hit Rate:   0.36
+------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       3
+Cache Misses:     9
+Total Memory Request: 12
+Cache Miss Rate:  0.75
+Cache Hit Rate:   0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+**************************************************Test Case5: 8 Way and cache line size = 32 bytes***********************************************************
+Results:
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1294185
+Cache Misses:     205815
+Total Memory Request: 1500000
+Cache Miss Rate:  0.14
+Cache Hit Rate:   0.86
+-------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       13
+Cache Misses:     7
+Total Memory Request: 20
+Cache Miss Rate:  0.35
+Cache Hit Rate:   0.65
+---------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     3
+Total Memory Request: 10
+Cache Miss Rate:  0.30
+Cache Hit Rate:   0.70
+--------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1077913
+Cache Misses:     2156142
+Total Memory Request: 3234055
+Cache Miss Rate:  0.67
+Cache Hit Rate:   0.33
+-----------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       5
+Cache Misses:     7
+Total Memory Request: 12
+Cache Miss Rate:  0.58
+Cache Hit Rate:   0.42
+-------------------------------------------------------------------------------------------------------------------------------
+*************************************Test Case6: 8 Way and cache line size = 128 bytes*******************************************
+Results:
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1369561
+Cache Misses:     130439
+Total Memory Request: 1500000
+Cache Miss Rate:  0.09
+Cache Hit Rate:   0.91
+---------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       13
+Cache Misses:     7
+Total Memory Request: 20
+Cache Miss Rate:  0.35
+Cache Hit Rate:   0.65
+-----------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     3
+Total Memory Request: 10
+Cache Miss Rate:  0.30
+Cache Hit Rate:   0.70
+------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1163090
+Cache Misses:     2070965
+Total Memory Request: 3234055
+Cache Miss Rate:  0.64
+Cache Hit Rate:   0.36
+------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+---------------------------------------------------------------------------------------------------------------------------------
+
+***********************************************Test Case7: 4 way and Cache line size = 16 bytes*************************************************
+
+Results:
+
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1365558
+Cache Misses:     134442
+Total Memory Request: 1500000
+Cache Miss Rate:  0.09
+Cache Hit Rate:   0.91
+--------------------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       10
+Cache Misses:     10
+Total Memory Request: 20
+Cache Miss Rate:  0.50
+Cache Hit Rate:   0.50
+-----------------------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       6
+Cache Misses:     4
+Total Memory Request: 10
+Cache Miss Rate:  0.40
+Cache Hit Rate:   0.60
+------------------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1131654
+Cache Misses:     2102401
+Total Memory Request: 3234055
+Cache Miss Rate:  0.65
+Cache Hit Rate:   0.35
+----------------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       3
+Cache Misses:     9
+Total Memory Request: 12
+Cache Miss Rate:  0.75
+Cache Hit Rate:   0.25
+--------------------------------------------------------------------------------------------------------------------------------------
+
+*****************************************************Test Case8: 4 way and Cache line size = 32 bytes********************************************************
+
+Results:
+
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1314275
+Cache Misses:     185725
+Total Memory Request: 1500000
+Cache Miss Rate:  0.12
+Cache Hit Rate:   0.88
+----------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     9
+Total Memory Request: 20
+Cache Miss Rate:  0.45
+Cache Hit Rate:   0.55
+-------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       6
+Cache Misses:     4
+Total Memory Request: 10
+Cache Miss Rate:  0.40
+Cache Hit Rate:   0.60
+---------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1101124
+Cache Misses:     2132931
+Total Memory Request: 3234055
+Cache Miss Rate:  0.66
+Cache Hit Rate:   0.34
+--------------------------------------------------------------------
+For trace: hw2_q4_memoryadd
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       5
+Cache Misses:     7
+Total Memory Request: 12
+Cache Miss Rate:  0.58
+Cache Hit Rate:   0.42
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+************************** Test Case9: 4 way and Cache line size = 128 bytes *********************************************
+Results:
+
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1287333
+Cache Misses:     212667
+Total Memory Request: 1500000
+Cache Miss Rate:  0.14
+Cache Hit Rate:   0.86
+------------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     9
+Total Memory Request: 20
+Cache Miss Rate:  0.45
+Cache Hit Rate:   0.55
+----------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       6
+Cache Misses:     4
+Total Memory Request: 10
+Cache Miss Rate:  0.40
+Cache Hit Rate:   0.60
+--------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1010764
+Cache Misses:     2223291
+Total Memory Request: 3234055
+Cache Miss Rate:  0.69
+Cache Hit Rate:   0.31
+-------------------------------------------------------------
+For trace: hw2_q4_memoryadd
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+*******************************************Test Case10: 2 Way and Cache line size = 16 bytes*****************************************************
+
+Results:
+
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1316220
+Cache Misses:     183780
+Total Memory Request: 1500000
+Cache Miss Rate:  0.12
+Cache Hit Rate:   0.88
+--------------------------------------------------------------------
+
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       8
+Cache Misses:     12
+Total Memory Request: 20
+Cache Miss Rate:  0.60
+Cache Hit Rate:   0.40
+
+----------------------------------------------------------------------------
+
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       4
+Cache Misses:     6
+Total Memory Request: 10
+Cache Miss Rate:  0.60
+Cache Hit Rate:   0.40
+------------------------------------------------------------------------------
+
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1095731
+Cache Misses:     2138324
+Total Memory Request: 3234055
+Cache Miss Rate:  0.66
+Cache Hit Rate:   0.34
+--------------------------------------------------------------
+
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       3
+Cache Misses:     9
+Total Memory Request: 12
+Cache Miss Rate:  0.75
+Cache Hit Rate:   0.25
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+**********************************************Test Case11: 2 Way and Cache line size = 32 bytes****************************************************************
+
+Results:
+
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1286917
+Cache Misses:     213083
+Total Memory Request: 1500000
+Cache Miss Rate:  0.14
+Cache Hit Rate:   0.86
+------------------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       9
+Cache Misses:     11
+Total Memory Request: 20
+Cache Miss Rate:  0.55
+Cache Hit Rate:   0.45
+--------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       4
+Cache Misses:     6
+Total Memory Request: 10
+Cache Miss Rate:  0.60
+Cache Hit Rate:   0.40
+
+------------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1102624
+Cache Misses:     2131431
+Total Memory Request: 3234055
+Cache Miss Rate:  0.66
+Cache Hit Rate:   0.34
+---------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       5
+Cache Misses:     7
+Total Memory Request: 12
+Cache Miss Rate:  0.58
+Cache Hit Rate:   0.42
+
+--------------------------------------------------------------------------------------------------------
+************************************** Test Case12: 2 Way and Cache line size = 128 bytes *********************************************
+
+Results:
+
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1326336
+Cache Misses:     173664
+Total Memory Request: 1500000
+Cache Miss Rate:  0.12
+Cache Hit Rate:   0.88
+---------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       9
+Cache Misses:     11
+Total Memory Request: 20
+Cache Miss Rate:  0.55
+Cache Hit Rate:   0.45
+---------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       4
+Cache Misses:     6
+Total Memory Request: 10
+Cache Miss Rate:  0.60
+Cache Hit Rate:   0.40
+---------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1051465
+Cache Misses:     2182590
+Total Memory Request: 3234055
+Cache Miss Rate:  0.67
+Cache Hit Rate:   0.33
+--------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+###################################################################################################################################################################
+ 
+                                   2) For Requirement 2: Fixed Cache Line Size = 64 bytes and variable set and cache size
+ 
+*****************************************Test Case1: Fully Associative and Cache size = 16 KB i.e 16384************************************************************
+Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.hpcg
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1213887
+Cache Misses:     286113
+Total Memory Request: 1500000
+Cache Miss Rate:  0.19
+Cache Hit Rate:   0.81
+---------------------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_20
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       16
+Cache Misses:     4
+Total Memory Request: 20
+Cache Miss Rate:  0.20
+Cache Hit Rate:   0.80
+------------------------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_10
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     3
+Total Memory Request: 10
+Cache Miss Rate:  0.30
+Cache Hit Rate:   0.70
+---------------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1193859
+Cache Misses:     2040196
+Total Memory Request: 3234055
+Cache Miss Rate:  0.63
+Cache Hit Rate:   0.37
+
+----------------------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/hw2_q4_memoryaddr
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     1
+Total Memory Request: 12
+Cache Miss Rate:  0.08
+Cache Hit Rate:   0.92
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+***************************************** Test Case2: Fully Associative and Cache size = 32 KB i.e 32768 ******************************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.hpcg
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1244987
+Cache Misses:     255013
+Total Memory Request: 1500000
+Cache Miss Rate:  0.17
+Cache Hit Rate:   0.83
+--------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_20
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       18
+Cache Misses:     2
+Total Memory Request: 20
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+-----------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_10
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       8
+Cache Misses:     2
+Total Memory Request: 10
+Cache Miss Rate:  0.20
+Cache Hit Rate:   0.80
+--------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1334782
+Cache Misses:     1899273
+Total Memory Request: 3234055
+Cache Miss Rate:  0.59
+Cache Hit Rate:   0.41
+------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/hw2_q4_memoryaddr
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     1
+Total Memory Request: 12
+Cache Miss Rate:  0.08
+Cache Hit Rate:   0.92
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+**************************************** Test Case3: Fully Associative and Cache size = 64 KB i.e 65536*************************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.hpcg
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1385203
+Cache Misses:     114797
+Total Memory Request: 1500000
+Cache Miss Rate:  0.08
+Cache Hit Rate:   0.92
+-------------------------------------------------
+
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_20
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       19
+Cache Misses:     1
+Total Memory Request: 20
+Cache Miss Rate:  0.05
+Cache Hit Rate:   0.95
+---------------------------------------------------------
+
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream_10
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       9
+Cache Misses:     1
+Total Memory Request: 10
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/trace.stream
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       1863883
+Cache Misses:     1370172
+Total Memory Request: 3234055
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+-----------------------------------------------------------
+
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim fully-associative trace_for_students/hw2_q4_memoryaddr
+
+==================================
+Cache type:    Fully-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     1
+Total Memory Request: 12
+Cache Miss Rate:  0.08
+Cache Hit Rate:   0.92
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+************************************************ Test Case4: 8 Way and Cache size = 16 KB i.e 16384*************************************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1265288
+Cache Misses:     234712
+Total Memory Request: 1500000
+Cache Miss Rate:  0.16
+Cache Hit Rate:   0.84
+------------------------------------------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     9
+Total Memory Request: 20
+Cache Miss Rate:  0.45
+Cache Hit Rate:   0.55
+-------------------------------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       6
+Cache Misses:     4
+Total Memory Request: 10
+Cache Miss Rate:  0.40
+Cache Hit Rate:   0.60
+---------------------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1151667
+Cache Misses:     2082388
+Total Memory Request: 3234055
+Cache Miss Rate:  0.64
+Cache Hit Rate:   0.36
+--------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+--------------------------------------------------------------------------------------------------------------------------------------------
+*********************************************** Test Case5: 8 Way and Cache size = 32 KB i.e 32768******************************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1361485
+Cache Misses:     138515
+Total Memory Request: 1500000
+Cache Miss Rate:  0.09
+Cache Hit Rate:   0.91
+--------------------------------------------------------------------------------
+
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       13
+Cache Misses:     7
+Total Memory Request: 20
+Cache Miss Rate:  0.35
+Cache Hit Rate:   0.65
+-----------------------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     3
+Total Memory Request: 10
+Cache Miss Rate:  0.30
+Cache Hit Rate:   0.70
+---------------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1168215
+Cache Misses:     2065840
+Total Memory Request: 3234055
+Cache Miss Rate:  0.64
+Cache Hit Rate:   0.36
+----------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+************************************************ Test Case6: 8 Way and Cache size = 64 KB i.e 65536*****************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1347732
+Cache Misses:     152268
+Total Memory Request: 1500000
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+-------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       13
+Cache Misses:     7
+Total Memory Request: 20
+Cache Miss Rate:  0.35
+Cache Hit Rate:   0.65
+-------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     3
+Total Memory Request: 10
+Cache Miss Rate:  0.30
+Cache Hit Rate:   0.70
+--------------------------------------------------
+
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       1170597
+Cache Misses:     2063458
+Total Memory Request: 3234055
+Cache Miss Rate:  0.64
+Cache Hit Rate:   0.36
+---------------------------------------------------
+For trace: hw2_q4_memoryaddr
+
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 8
+
+==================================
+Cache type:    8-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+*********************************************Test Case7: 4 Way and Cache size = 16 KB i.e 16384************************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1260654
+Cache Misses:     239346
+Total Memory Request: 1500000
+Cache Miss Rate:  0.16
+Cache Hit Rate:   0.84
+----------------------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     9
+Total Memory Request: 20
+Cache Miss Rate:  0.45
+Cache Hit Rate:   0.55
+-----------------------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       6
+Cache Misses:     4
+Total Memory Request: 10
+Cache Miss Rate:  0.40
+Cache Hit Rate:   0.60
+------------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1048601
+Cache Misses:     2185454
+Total Memory Request: 3234055
+Cache Miss Rate:  0.68
+Cache Hit Rate:   0.32
+------------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+--------------------------------------------------------------------------------------------------------------------
+*****************************************************Test Case8: 4 Way and Cache size = 32 KB i.e 32768************************************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1356447
+Cache Misses:     143553
+Total Memory Request: 1500000
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+
+-----------------------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     9
+Total Memory Request: 20
+Cache Miss Rate:  0.45
+Cache Hit Rate:   0.55
+
+-------------------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       6
+Cache Misses:     4
+Total Memory Request: 10
+Cache Miss Rate:  0.40
+Cache Hit Rate:   0.60
+
+----------------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1151601
+Cache Misses:     2082454
+Total Memory Request: 3234055
+Cache Miss Rate:  0.64
+Cache Hit Rate:   0.36
+
+------------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+-------------------------------------------------------------------------------------------------------------------
+
+************************************Test Case9: 4 Way and Cache size = 64 KB i.e 65536*************************************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1347083
+Cache Misses:     152917
+Total Memory Request: 1500000
+Cache Miss Rate:  0.10
+Cache Hit Rate:   0.90
+
+-------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       11
+Cache Misses:     9
+Total Memory Request: 20
+Cache Miss Rate:  0.45
+Cache Hit Rate:   0.55
+
+----------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       5
+Cache Misses:     5
+Total Memory Request: 10
+Cache Miss Rate:  0.50
+Cache Hit Rate:   0.50
+-------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       1128135
+Cache Misses:     2105920
+Total Memory Request: 3234055
+Cache Miss Rate:  0.65
+Cache Hit Rate:   0.35
+-------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 4
+
+==================================
+Cache type:    4-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ ************************************************ Test Case10: 2 Way and Cache size = 16 KB i.e 16384*********************************************************
+ Result:
+ 
+ For trace: trace.hpcg
+ cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1265065
+Cache Misses:     234935
+Total Memory Request: 1500000
+Cache Miss Rate:  0.16
+Cache Hit Rate:   0.84
+------------------------------------------------------------------------
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       8
+Cache Misses:     12
+Total Memory Request: 20
+Cache Miss Rate:  0.60
+Cache Hit Rate:   0.40
+----------------------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       4
+Cache Misses:     6
+Total Memory Request: 10
+Cache Miss Rate:  0.60
+Cache Hit Rate:   0.40
+---------------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1034810
+Cache Misses:     2199245
+Total Memory Request: 3234055
+Cache Miss Rate:  0.68
+Cache Hit Rate:   0.32
+------------------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+--------------------------------------------------------------------------------------------------------------------
+************************************************* Test Case11: 2 Way and Cache size = 32 KB i.e 32768*************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1280226
+Cache Misses:     219774
+Total Memory Request: 1500000
+Cache Miss Rate:  0.15
+Cache Hit Rate:   0.85
+---------------------------------------------------------------
+
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       9
+Cache Misses:     11
+Total Memory Request: 20
+Cache Miss Rate:  0.55
+Cache Hit Rate:   0.45
+------------------------------------------------------------------
+
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       4
+Cache Misses:     6
+Total Memory Request: 10
+Cache Miss Rate:  0.60
+Cache Hit Rate:   0.40
+
+---------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1082775
+Cache Misses:     2151280
+Total Memory Request: 3234055
+Cache Miss Rate:  0.67
+Cache Hit Rate:   0.33
+---------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+*****************************************************Test Case12: 2 Way and Cache size = 64 KB i.e 65536************************************************
+ Result:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.hpcg 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1329785
+Cache Misses:     170215
+Total Memory Request: 1500000
+Cache Miss Rate:  0.11
+--------------------------------------------------------------------------
+
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_20 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     13
+Total Memory Request: 20
+Cache Miss Rate:  0.65
+Cache Hit Rate:   0.35
+------------------------------------------------------------
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream_10 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1
+Cache Misses:     9
+Total Memory Request: 10
+Cache Miss Rate:  0.90
+Cache Hit Rate:   0.10
+-------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/trace.stream 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       1106326
+Cache Misses:     2127729
+Total Memory Request: 3234055
+Cache Miss Rate:  0.66
+Cache Hit Rate:   0.34
+--------------------------------------------------------------
+For trace: hw2_q4_memoryaddr
+cpu-24-19:/CS5375$ ./cachesim n-way trace_for_students/hw2_q4_memoryaddr 2
+
+==================================
+Cache type:    2-Associative Cache
+==================================
+Cache Hits:       7
+Cache Misses:     5
+Total Memory Request: 12
+Cache Miss Rate:  0.42
+Cache Hit Rate:   0.58
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#############################################################################################################################################################
+                                        
+										                              Part 3:
+						
+										
+ Two Level Cache Simulator Results:
+ 
+ Test Case: L1- 2-way, 64KB(65536) cache and 64B block size
+            L2- 8-way, 1MB(1048576) cache, and 64B block size
+			
+			
+Results:
+ 
+For trace: trace.hpcg
+cpu-24-19:/CS5375$ ./cachesim 2-level trace_for_students/trace.hpcg
+
+==================================
+Cache type:    2-level-set-Associative Cache
+==================================
+L1 Cache Hits:       1261579
+L1 Cache Misses:     238421
+L1 Cache Miss Rate:  0.16
+L1 Cache Hit Rate:   0.84
+L2 Cache Hits:       119857
+L2 Cache Misses:     118564
+L2 Cache Miss Rate:  0.50
+L2 Cache Hit Rate:   0.50
+Total Memory Request:   1500000
+
+--------------------------------------------------------------------
+
+For trace: trace.stream_20
+cpu-24-19:/CS5375$ ./cachesim 2-level trace_for_students/trace.stream_20
+
+==================================
+Cache type:    2-level-set-Associative Cache
+==================================
+L1 Cache Hits:       1
+L1 Cache Misses:     19
+L1 Cache Miss Rate:  0.95
+L1 Cache Hit Rate:   0.05
+L2 Cache Hits:       3
+L2 Cache Misses:     16
+L2 Cache Miss Rate:  0.84
+L2 Cache Hit Rate:   0.16
+Total Memory Request:   20
+
+--------------------------------------------------------------------
+
+For trace: trace.stream_10
+cpu-24-19:/CS5375$ ./cachesim 2-level trace_for_students/trace.stream_10
+
+==================================
+Cache type:    2-level-set-Associative Cache
+==================================
+L1 Cache Hits:       0
+L1 Cache Misses:     10
+L1 Cache Miss Rate:  1.00
+L1 Cache Hit Rate:   0.00
+L2 Cache Hits:       0
+L2 Cache Misses:     10
+L2 Cache Miss Rate:  1.00
+L2 Cache Hit Rate:   0.00
+Total Memory Request:   10
+------------------------------------------------------------------------
+For trace: trace.stream
+cpu-24-19:/CS5375$ ./cachesim 2-level trace_for_students/trace.stream
+
+==================================
+Cache type:    2-level-set-Associative Cache
+==================================
+L1 Cache Hits:       1129545
+L1 Cache Misses:     2104510
+L1 Cache Miss Rate:  0.65
+L1 Cache Hit Rate:   0.35
+L2 Cache Hits:       78597
+L2 Cache Misses:     2025913
+L2 Cache Miss Rate:  0.96
+L2 Cache Hit Rate:   0.04
+Total Memory Request:   3234055
+---------------------------------------------------------------------------
+For trace: hw2_q4_memoryaddr 
+cpu-24-19:/CS5375$ ./cachesim 2-level trace_for_students/hw2_q4_memoryaddr
+
+==================================
+Cache type:    2-level-set-Associative Cache
+==================================
+L1 Cache Hits:       4
+L1 Cache Misses:     8
+L1 Cache Miss Rate:  0.67
+L1 Cache Hit Rate:   0.33
+L2 Cache Hits:       3
+L2 Cache Misses:     5
+L2 Cache Miss Rate:  0.62
+L2 Cache Hit Rate:   0.38
+Total Memory Request:   12
+-----------------------------------------------End of Results-------------------------------------------------------------------------------
+ 
+ 
